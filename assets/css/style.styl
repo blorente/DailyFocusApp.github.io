@@ -1,7 +1,7 @@
 textColor = #000
 highlightColor = #8d31ce
 logoSize = 350px
-MemberAvatar = 150px
+MemberAvatar = 180px
 
 mainColorTop = #118cff
 mainColorBottom = #952ccb
@@ -160,20 +160,11 @@ Sections
     text-align center
 
     &Avatar
-      width 100%
-      height 210px
-      //border-radius 30px
-      overflow hidden
+      width MemberAvatar
+      height MemberAvatar
+      border-radius 30px
       background-size cover
-      position relative
-
-      &:before
-        content ""
-        width 100%
-        height 100%
-        position absolute
-        left 0
-        top 0
+      display inline-block
 
     &Title
       font-size 1.1em

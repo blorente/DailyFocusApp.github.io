@@ -1,0 +1,192 @@
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+p,
+a {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-size: 2.8em;
+}
+h3 {
+  color: #118cff;
+}
+p {
+  font-size: 1em;
+  margin: 1em 0;
+}
+p span {
+  background: #f4f4f4;
+  margin: 0 0.3em;
+  padding: 0 0.5em;
+  font-weight: 600;
+}
+a {
+  color: #8d31ce;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+.grayscale {
+  -moz-filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+  -o-filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+  -webkit-filter: grayscale(100%);
+  filter: #808080;
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+}
+/****
+Mixins
+****/
+/****
+Commun
+****/
+.Centered {
+  text-align: center;
+}
+.Button {
+  background: #118cff;
+  background: #952ccb;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  border-radius: 60px;
+  display: inline-block;
+  text-align: center;
+  padding: 1em 1.5em;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+.ButtonBordered {
+  font-weight: 600;
+  color: #252525;
+  color: #952ccb;
+  text-decoration: none;
+  padding-bottom: 10px;
+}
+.Box {
+  width: 680px;
+  margin: 0 auto;
+}
+.BoxWrapper {
+  padding: 2.5em 0;
+  color: #000;
+  border-top: 1px dotted #cecece;
+  border-left: 0;
+  border-right: 0;
+}
+.header {
+  padding: 4em 0;
+  border: 0;
+}
+.emptySeparator {
+  width: 100%;
+  display: inline-block;
+  margin: 0.5em 0;
+}
+.smallEmptySeparator {
+  margin: 1em 0;
+  display: inline-block;
+}
+/****
+Sections
+****/
+.Company {
+  width: 640px;
+  margin: 0 auto;
+  text-align: center;
+}
+.CompanyLogo img {
+  width: 350px;
+  height: 350px;
+}
+.CompanyName {
+  color: #000;
+  font-weight: 400;
+  font-size: 4.5em;
+  margin: 0.6em 0;
+}
+.CompanyName span {
+  font-size: 0.7em;
+  font-weight: 300;
+}
+.CompanyDescription {
+  font-size: 1.5em;
+}
+.Features li {
+  width: 43.5%;
+  margin: 0.6em 0;
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 2%;
+  padding-right: 2%;
+  border-left: 2px solid #cecece;
+  text-align: justify;
+}
+.Team {
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+}
+.TeamWrapper {
+  width: 100%;
+  margin: 5em 0;
+}
+.Team .Member {
+  width: 33%;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: -5px;
+  text-align: center;
+}
+.Team .MemberAvatar {
+  width: 100%;
+  height: 210px;
+  overflow: hidden;
+  background-size: cover;
+  position: relative;
+}
+.Team .MemberAvatar:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.Team .MemberTitle {
+  font-size: 1.1em;
+  margin: 1em 0;
+  color: #952ccb;
+}
+.Team .MemberActivity {
+  margin-top: -0.2em;
+  font-size: 0.9em;
+}
+.copy {
+  display: inline-block;
+}
+.Social {
+  width: 100%;
+  margin-top: 10px;
+}
+.Social ul li {
+  display: inline-block;
+  margin-left: 1em;
+}
+.Social ul li a {
+  color: #000;
+  text-decoration: none;
+  border-left: 1px solid #cecece;
+  padding-left: 1em;
+  font-weight: 600;
+}
